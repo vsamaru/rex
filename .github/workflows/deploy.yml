@@ -55,7 +55,7 @@ jobs:
       - run: rm -r node_modules
       - uses: denoland/deployctl@v1
         with:
-          project: worker-news
+          project: lii
           entrypoint: src/entry/deno.ts
           import-map: import-map.json
       
