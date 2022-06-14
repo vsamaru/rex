@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "start": "remix-serve build",
+    "build": "remix build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "dev": "remix dev"
+  },
+  "dependencies": {
+    "@remix-run/node": "1.5.1",
+    "@remix-run/react": "1.5.1",
+    "@remix-run/serve": "1.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "@remix-run/dev": "1.5.1",
+    "@remix-run/eslint-config": "1.5.1",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.13",
+    "eslint": "^8.10.0",
+    "typescript": "^4.6.2"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "name": "40pvs1",
+  "description": null,
+  "version": "0.0.0"
+}
