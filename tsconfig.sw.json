@@ -2,14 +2,16 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@worker-tools/kv-storage": ["./node_modules/@worker-tools/cloudflare-kv-storage"],
+      "@worker-tools/kv-storage": ["./node_modules/@worker-tools/kv-storage-polyfill"],
       "perf_hooks": ["./src/stubs/perf_hooks.js"],
       "firebase/app": ["./src/stubs/firebase.js"],
       "firebase/database": ["./src/stubs/firebase.js"],
+      "linkedom": ["./src/stubs/linkedom.ts"],
+      "device-detector-js": ["./src/stubs/device-detector.ts"],
     },
     "outDir": "./dist",
     "module": "ESNext",
-    "target": "ES2022",
+    "target": "ES2018",
     "lib": [
       "ES2021",
       "WebWorker",
@@ -27,13 +29,13 @@
     "allowJs": true,
     "checkJs": true,
     "types": [
-      "@cloudflare/workers-types",
+      "@types/node",
     ],
   },
   "include": [
     "typings/*.d.ts",
     "src/*.ts",
-    "src/**/*.ts", 
+    "src/**/*.ts",
   ],
   "exclude": [
     "node_modules/",

@@ -1,0 +1,21 @@
+name = "news-dev"
+main = "./dist/worker.js"
+account_id = "d1574ff4d207bc23602cc79fc78b7b2a"
+workers_dev = true
+compatibility_date = "2022-05-24"
+compatibility_flags = ["html_rewriter_treats_esi_include_as_void_tag", "streams_enable_constructors"]
+
+[site]
+  bucket = "./public"
+
+[build]
+  command = "npm run build"
+
+[vars]
+  WORKER_LOCATION = 'http://localhost:8787'
+
+[env.production]
+  name = "x"
+
+  [env.production.vars]
+    WORKER_LOCATION = 'https://x.4l.workers.dev'
